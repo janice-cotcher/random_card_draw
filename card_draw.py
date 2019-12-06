@@ -50,7 +50,7 @@ class Trials:
         return self.hand
 
     def draw(self, deck, n_max):
-        """Draw a card and then replace and shuffle""""
+        """Draw a card and then replace and shuffle"""
         while self.n < self.n_max:
             deck = Deck()
             deck.shuffle()
