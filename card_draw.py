@@ -1,8 +1,6 @@
 # code adapted from https://medium.com/@anthonytapias/build-a-deck-of-cards-with-oo-python-c41913a744d3
 import random
-# import tabulate
 import pandas as pd
-# import collections
 
 
 class Card:
@@ -71,9 +69,6 @@ class Trials:
             count = self.hand.count(card)
             percent = count * 100/self.n_max
             total.append([card, count, percent])
-        # print(tabulate.tabulate(total,
-        #                         headers=["Card", " Count", "% Frequency"],
-        #                         tablefmt="fancy_grid"))
         df = pd.DataFrame([[i[0], i[1], i[2]] for i in total],
                   columns=['Cards', 'Count', '% Frequency'])
 
